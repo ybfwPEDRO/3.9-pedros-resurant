@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant Reservation</title>
+    <title>Pedros mexican resurant</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="container">
     <div class="content">
-        <h1>Restaurant Reservation</h1>
+        <h1>pedros mexican resurant</h1>
         <div class="row">
             <div>
-                <label for="full">Full Name:</label>
+                <label for="full">Your name:</label>
                 <input id="full" name="full_name" type="text">
             </div>
             <div>
-                <label for="time">Time:</label>
+                <label for="time">reservation time?:</label>
                 <input id="time" name="time_name" type="text">
             </div>
         </div>
-        <button id="add">Add Reservation</button>
+        <button id="add">Add reservation</button>
         <button id="clear">Clear</button>
         <div id = "all">
         </div>
@@ -35,7 +35,7 @@
 
     addButton.addEventListener('click', function(e){
         const newReservation = document.createElement("p")
-        newReservation.innerHTML = `Your reservation at ${time.value} has been set ${full.value}`
+        newReservation.innerHTML = `You gotta reservation at ${time.value} and is from ${full.value}`
         all.appendChild(newReservation);
     })
     clearButton.addEventListener('click', function(e){
